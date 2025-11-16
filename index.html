@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>VanillaJS Challenge</title>
+  </head>
+  <body>
+    <!-- 실시간 시계 -->
+    <div>
+      <h1 id="clock">00:00:00</h1>
+      <p id="days">00/00</p>
+    </div>
+    <!-- 로컬 스토리지를 사용한 로그인 -->
+    <form class="hidden" id="login-form">
+      <input
+        id="login-input"
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <button type="submit" id="login-button">LOGIN</button>
+    </form>
+    <h2 id="greeting" class="hidden"></h2>
+    <!-- 로컬 스토리지를 사용한 투두리스트 -->
+    <form id="todo-form">
+      <input
+        type="text"
+        placeholder="Write a To-Do and Press Enter"
+        required
+        id="todo-input"
+      />
+    </form>
+    <ul id="todo-list"></ul>
+    <!-- 날씨와 위치 (geolocation) -->
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <script src="js/background.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
